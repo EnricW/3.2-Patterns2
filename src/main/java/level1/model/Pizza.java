@@ -1,8 +1,8 @@
-package model;
+package level1.model;
 
-import components.Dough;
-import components.Ingredient;
-import components.Size;
+import level1.components.Dough;
+import level1.components.Ingredient;
+import level1.components.Size;
 
 import java.util.ArrayList;
 

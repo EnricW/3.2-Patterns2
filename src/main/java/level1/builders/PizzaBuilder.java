@@ -1,8 +1,8 @@
-package builders;
+package level1.builders;
 
-import components.Dough;
-import components.Ingredient;
-import components.Size;
+import level1.components.Dough;
+import level1.components.Ingredient;
+import level1.components.Size;
 
 public interface PizzaBuilder {
     void setSize(Size size);

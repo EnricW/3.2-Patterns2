@@ -1,14 +1,12 @@
-package builders;
+package level1.builders;
 
-import components.Dough;
-import components.Ingredient;
-import components.Size;
-import model.Pizza;
+import level1.components.*;
+import level1.model.Pizza;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MargheritaPizza implements PizzaBuilder {
+public class BBQPizza implements PizzaBuilder {
     private Size size;
     private Dough dough;
     private List<Ingredient> ingredients = new ArrayList<>();

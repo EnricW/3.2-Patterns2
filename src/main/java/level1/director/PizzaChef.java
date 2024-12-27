@@ -1,9 +1,9 @@
-package director;
+package level1.director;
 
-import builders.PizzaBuilder;
-import components.Dough;
-import components.Ingredient;
-import components.Size;
+import level1.builders.PizzaBuilder;
+import level1.components.Dough;
+import level1.components.Ingredient;
+import level1.components.Size;
 
 public class PizzaChef {
 
