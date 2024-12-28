@@ -1,4 +1,7 @@
-package level3;
+package level3.main;
+
+import level3.payment.PaymentGateway;
+import level3.payment.PaymentMethod;
 
 public class ShoeStore {
     private PaymentGateway paymentGateway;

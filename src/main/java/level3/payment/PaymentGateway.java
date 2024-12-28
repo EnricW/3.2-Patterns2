@@ -1,4 +1,4 @@
-package level3;
+package level3.payment;
 
 public class PaymentGateway {
     public boolean process(PaymentMethod paymentMethod, double amount) {

@@ -1,4 +1,6 @@
-package level3;
+package level3.main;
+
+import level3.payment.*;
 
 public class Main {
     public static void main(String[] args) {

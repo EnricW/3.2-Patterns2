@@ -1,4 +1,4 @@
-package level3;
+package level3.payment;
 
 public class PayPalPayment implements PaymentMethod {
     private String email;

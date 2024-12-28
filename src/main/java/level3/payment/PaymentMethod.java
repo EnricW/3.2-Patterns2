@@ -1,4 +1,4 @@
-package level3;
+package level3.payment;
 
 public interface PaymentMethod {
     boolean processPayment(double amount);
