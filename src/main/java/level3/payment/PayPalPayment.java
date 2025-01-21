@@ -1,6 +1,6 @@
 package level3.payment;
 
-public class PayPalPayment implements PaymentMethod {
+public class PayPalPayment implements PaymentCallback {
     private String email;
 
     public PayPalPayment(String email) {

@@ -1,6 +1,6 @@
 package level3.payment;
 
-public class BankDebitPayment implements PaymentMethod {
+public class BankDebitPayment implements PaymentCallback {
     private String accountNumber;
 
     public BankDebitPayment(String accountNumber) {

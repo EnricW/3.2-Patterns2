@@ -1,6 +1,6 @@
 package level3.payment;
 
-public class CreditCardPayment implements PaymentMethod {
+public class CreditCardPayment implements PaymentCallback {
     private String cardNumber;
 
     public CreditCardPayment(String cardNumber) {

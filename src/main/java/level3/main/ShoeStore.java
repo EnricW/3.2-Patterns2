@@ -1,7 +1,7 @@
 package level3.main;
 
 import level3.payment.PaymentGateway;
-import level3.payment.PaymentMethod;
+import level3.payment.PaymentCallback;
 
 public class ShoeStore {
     private PaymentGateway paymentGateway;
@@ -10,9 +10,9 @@ public class ShoeStore {
         this.paymentGateway = paymentGateway;
     }
 
-    public void purchase(String shoeModel, double price, PaymentMethod paymentMethod) {
+    public void purchase(String shoeModel, double price, PaymentCallback paymentCallback) {
         System.out.println("ShoeStore: Starting purchase for " + shoeModel + " at " + price + " €");
-        boolean success = paymentGateway.process(paymentMethod, price);
+        boolean success = paymentGateway.process(paymentCallback, price);
         if (success) {
             System.out.println("ShoeStore: Payment successful. Purchase completed!");
         } else {

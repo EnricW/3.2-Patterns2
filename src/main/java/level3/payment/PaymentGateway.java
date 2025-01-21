@@ -1,8 +1,8 @@
 package level3.payment;
 
 public class PaymentGateway {
-    public boolean process(PaymentMethod paymentMethod, double amount) {
+    public boolean process(PaymentCallback paymentCallback, double amount) {
         System.out.println("Payment Gateway: Redirecting to payment method...");
-        return paymentMethod.processPayment(amount);
+        return paymentCallback.processPayment(amount);
     }
 }

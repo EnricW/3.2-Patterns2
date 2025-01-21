@@ -1,5 +1,5 @@
 package level3.payment;
 
-public interface PaymentMethod {
+public interface PaymentCallback {
     boolean processPayment(double amount);
 }
