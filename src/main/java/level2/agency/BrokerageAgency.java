@@ -1,4 +1,6 @@
-package level2;
+package level2.agency;
+
+import level2.observer.StockObserver;
 
 public class BrokerageAgency implements StockObserver {
     private final String name;

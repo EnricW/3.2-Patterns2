@@ -1,4 +1,4 @@
-package level2;
+package level2.observer;
 
 public interface Subject {
     void registerObserver(StockObserver observer);
