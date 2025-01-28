@@ -75,7 +75,7 @@ Simula una passarel·la de pagament que utilitzi el patró Callback.
 
 1. Clona el repositori:
 ```bash
-git clone https://github.com/ElTeuUsuari/3.2-Patterns2.git
+git clone https://github.com/EnricW/3.2-Patterns2.git
 ```
 
 2. Obre el projecte amb IntelliJ IDEA:
