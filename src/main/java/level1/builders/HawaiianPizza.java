@@ -14,21 +14,25 @@ public class HawaiianPizza implements PizzaBuilder {
     private List<Ingredient> ingredients = new ArrayList<>();
 
     @Override
-    public void setSize(Size size) {
+    public PizzaBuilder setSize(Size size) {
         this.size = size;
+        return this;
     }
 
     @Override
-    public void setDough(Dough dough) {
+    public PizzaBuilder setDough(Dough dough) {
         this.dough = dough;
+        return this;
     }
 
     @Override
-    public void addIngredient(Ingredient ingredient) {
+    public PizzaBuilder addIngredient(Ingredient ingredient) {
         ingredients.add(ingredient);
+        return this;
     }
 
-    public Pizza getResult(){
-        return new Pizza(size,dough, (ArrayList<Ingredient>) ingredients);
+    @Override
+    public Pizza build() {
+        return new Pizza(size, dough, new ArrayList<>(ingredients));
     }
 }

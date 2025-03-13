@@ -11,24 +11,17 @@ public class Main {
     public static void main(String[] args) {
         PizzaChef chef = new PizzaChef();
 
-        BBQPizza bbqPizza = new BBQPizza();
-        chef.constructBBQPizza(bbqPizza);
-        Pizza pizza = bbqPizza.getResult();
-        System.out.println("BBQ: "+pizza.toString());
+        Pizza bbqPizza = chef.makeBBQPizza(new BBQPizza());
+        System.out.println("BBQ: " + bbqPizza);
 
-        PepperoniPizza pepperoniPizza = new PepperoniPizza();
-        chef.constructPepperoniPizza(pepperoniPizza);
-        pizza = pepperoniPizza.getResult();
-        System.out.println("Pepperoni: "+pizza.toString());
+        Pizza pepperoniPizza = chef.makePepperoniPizza(new PepperoniPizza());
+        System.out.println("Pepperoni: " + pepperoniPizza);
 
-        MargheritaPizza margheritaPizza = new MargheritaPizza();
-        chef.constructMargheritaPizza(margheritaPizza);
-        pizza = margheritaPizza.getResult();
-        System.out.println("Margherita: "+pizza.toString());
+        Pizza margheritaPizza = chef.makeMargheritaPizza(new MargheritaPizza());
+        System.out.println("Margherita: " + margheritaPizza);
 
-        HawaiianPizza hawaiianPizza = new HawaiianPizza();
-        chef.constructHawaiianPizza(hawaiianPizza);
-        pizza = hawaiianPizza.getResult();
-        System.out.println("Hawaiian: "+pizza.toString());
+        Pizza hawaiianPizza = chef.makeHawaiianPizza(new HawaiianPizza());
+        System.out.println("Hawaiian: " + hawaiianPizza);
     }
 }
+
